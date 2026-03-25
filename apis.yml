@@ -1,0 +1,38 @@
+aid: pact
+name: Pact
+description: >-
+  Pact is an open source contract testing framework that verifies API consumer-provider interactions with support for Ruby, Java, .NET, JavaScript, Go, and Python.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Testing
+  - Contract Testing
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/pact/refs/heads/main/apis.yml
+created: '2026-03-25'
+modified: '2026-03-25'
+specificationVersion: '0.19'
+apis:
+  - aid: pact:pact
+    name: Pact
+    description: >-
+      Pact is an open source contract testing framework that verifies API consumer-provider interactions with support for Ruby, Java, .NET, JavaScript, Go, and Python.
+    humanURL: https://pact.io
+    tags:
+      - Testing
+      - Contract Testing
+    properties:
+      - type: Documentation
+        url: https://docs.pact.io
+      - type: GitHub Repository
+        url: https://github.com/pact-foundation
+common:
+  - type: Website
+    url: https://pact.io
+  - type: Documentation
+    url: https://docs.pact.io
+  - type: GitHub Organization
+    url: https://github.com/pact-foundation
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
