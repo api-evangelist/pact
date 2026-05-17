@@ -33,7 +33,7 @@ apis:
     properties:
       - type: Documentation
         url: https://docs.pact.io/pact_broker
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/pact-foundation/pact_broker
       - type: Hosted Service
         url: https://pactflow.io
@@ -42,7 +42,7 @@ common:
     url: https://pact.io
   - type: Documentation
     url: https://docs.pact.io
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/pact-foundation
   - type: Slack
     url: https://pact-foundation.slack.com
