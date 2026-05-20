@@ -38,6 +38,8 @@ apis:
       - type: Hosted Service
         url: https://pactflow.io
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/pact
   - type: Website
     url: https://pact.io
   - type: Documentation
