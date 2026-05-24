@@ -50,6 +50,8 @@ common:
     url: https://pact-foundation.slack.com
   - type: Blog
     url: https://docs.pact.io/blog
+  - type: LLMsTxt
+    url: https://docs.pact.io/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
