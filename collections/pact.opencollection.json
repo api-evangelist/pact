@@ -1,0 +1,249 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Pact Broker API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Index",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "API index (HAL)",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pact-broker.example.com/"
+          },
+          "docs": "API index (HAL)"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Pacts",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Publish a pact for a consumer version",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://pact-broker.example.com/pacts/provider/:provider/consumer/:consumer/version/:version",
+            "params": [
+              {
+                "name": "provider",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "consumer",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "version",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Publish a pact for a consumer version"
+        },
+        {
+          "info": {
+            "name": "Get the latest pact between a consumer and provider",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pact-broker.example.com/pacts/provider/:provider/consumer/:consumer/latest",
+            "params": [
+              {
+                "name": "provider",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "consumer",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get the latest pact between a consumer and provider"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Pacticipants",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List pacticipants (applications)",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pact-broker.example.com/pacticipants"
+          },
+          "docs": "List pacticipants (applications)"
+        },
+        {
+          "info": {
+            "name": "Get a pacticipant by name",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pact-broker.example.com/pacticipants/:name",
+            "params": [
+              {
+                "name": "name",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a pacticipant by name"
+        },
+        {
+          "info": {
+            "name": "Create or update a pacticipant",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pact-broker.example.com/pacticipants/:name",
+            "params": [
+              {
+                "name": "name",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create or update a pacticipant"
+        },
+        {
+          "info": {
+            "name": "Get a specific version of a pacticipant",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pact-broker.example.com/pacticipants/:name/versions/:version",
+            "params": [
+              {
+                "name": "name",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "version",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a specific version of a pacticipant"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Verifications",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List verification results",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pact-broker.example.com/verification-results"
+          },
+          "docs": "List verification results"
+        },
+        {
+          "info": {
+            "name": "Publish a verification result",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pact-broker.example.com/verification-results",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Publish a verification result"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Webhooks",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List webhooks",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pact-broker.example.com/webhooks"
+          },
+          "docs": "List webhooks"
+        },
+        {
+          "info": {
+            "name": "Create a webhook",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pact-broker.example.com/webhooks",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a webhook"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
