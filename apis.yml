@@ -6,7 +6,7 @@ description: >-
   JavaScript, Go, and Python. Pact Broker provides a hypermedia-driven HAL
   API for storing, retrieving, and verifying contracts between services.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Contract Testing
   - Open Source
