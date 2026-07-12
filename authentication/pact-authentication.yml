@@ -1,0 +1,13 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/pact-openapi.yml
+summary:
+  types:
+  - http
+schemes:
+- name: basicAuth
+  type: http
+  scheme: basic
+  description: HTTP Basic authentication (when the broker is configured for it)
+  sources:
+  - openapi/pact-openapi.yml

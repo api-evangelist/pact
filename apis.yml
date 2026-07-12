@@ -38,6 +38,10 @@ apis:
       - type: Hosted Service
         url: https://pactflow.io
 common:
+  - type: DomainSecurity
+    url: security/pact-domain-security.yml
+  - type: Authentication
+    url: authentication/pact-authentication.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/pact
   - type: Website
