@@ -38,6 +38,8 @@ apis:
       - type: Hosted Service
         url: https://pactflow.io
 common:
+  - type: AgenticAccess
+    url: agentic-access/pact-agentic-access.yml
   - type: DomainSecurity
     url: security/pact-domain-security.yml
   - type: Authentication
