@@ -1,0 +1,31 @@
+openapi: 3.1.0
+info:
+  title: Pact Broker Index API
+  description: The Pact Broker is a RESTful application for sharing consumer-driven contracts (pacts) between consumer and provider teams, and for publishing and querying verification results. Authentication, when enabled, is typically HTTP Basic.
+  version: 1.0.0
+  contact:
+    name: Pact
+    url: https://docs.pact.io/pact_broker
+servers:
+- url: https://pact-broker.example.com
+  description: Self-hosted Pact Broker
+security:
+- basicAuth: []
+tags:
+- name: Index
+paths:
+  /:
+    get:
+      tags:
+      - Index
+      summary: API index (HAL)
+      operationId: getIndex
+      responses:
+        '200':
+          description: HAL index with links to all resources
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      description: HTTP Basic authentication (when the broker is configured for it)

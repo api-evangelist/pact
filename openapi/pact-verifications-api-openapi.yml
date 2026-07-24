@@ -1,0 +1,45 @@
+openapi: 3.1.0
+info:
+  title: Pact Broker Index Verifications API
+  description: The Pact Broker is a RESTful application for sharing consumer-driven contracts (pacts) between consumer and provider teams, and for publishing and querying verification results. Authentication, when enabled, is typically HTTP Basic.
+  version: 1.0.0
+  contact:
+    name: Pact
+    url: https://docs.pact.io/pact_broker
+servers:
+- url: https://pact-broker.example.com
+  description: Self-hosted Pact Broker
+security:
+- basicAuth: []
+tags:
+- name: Verifications
+paths:
+  /verification-results:
+    get:
+      tags:
+      - Verifications
+      summary: List verification results
+      operationId: listVerificationResults
+      responses:
+        '200':
+          description: A list of verification results
+    post:
+      tags:
+      - Verifications
+      summary: Publish a verification result
+      operationId: publishVerificationResult
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '201':
+          description: Verification result published
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      description: HTTP Basic authentication (when the broker is configured for it)

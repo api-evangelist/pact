@@ -1,0 +1,86 @@
+openapi: 3.1.0
+info:
+  title: Pact Broker Index Pacticipants API
+  description: The Pact Broker is a RESTful application for sharing consumer-driven contracts (pacts) between consumer and provider teams, and for publishing and querying verification results. Authentication, when enabled, is typically HTTP Basic.
+  version: 1.0.0
+  contact:
+    name: Pact
+    url: https://docs.pact.io/pact_broker
+servers:
+- url: https://pact-broker.example.com
+  description: Self-hosted Pact Broker
+security:
+- basicAuth: []
+tags:
+- name: Pacticipants
+paths:
+  /pacticipants:
+    get:
+      tags:
+      - Pacticipants
+      summary: List pacticipants (applications)
+      operationId: listPacticipants
+      responses:
+        '200':
+          description: A list of pacticipants
+  /pacticipants/{name}:
+    get:
+      tags:
+      - Pacticipants
+      summary: Get a pacticipant by name
+      operationId: getPacticipant
+      parameters:
+      - in: path
+        name: name
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: A pacticipant
+    post:
+      tags:
+      - Pacticipants
+      summary: Create or update a pacticipant
+      operationId: createOrUpdatePacticipant
+      parameters:
+      - in: path
+        name: name
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Pacticipant created or updated
+  /pacticipants/{name}/versions/{version}:
+    get:
+      tags:
+      - Pacticipants
+      summary: Get a specific version of a pacticipant
+      operationId: getPacticipantVersion
+      parameters:
+      - in: path
+        name: name
+        required: true
+        schema:
+          type: string
+      - in: path
+        name: version
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: A pacticipant version
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      description: HTTP Basic authentication (when the broker is configured for it)
