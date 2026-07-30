@@ -6,7 +6,20 @@ description: >-
   JavaScript, Go, and Python. Pact Broker provides a hypermedia-driven HAL
   API for storing, retrieving, and verifying contracts between services.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pact.png
 tags:
   - Contract Testing
   - Open Source
@@ -19,24 +32,68 @@ position: Consumer
 access: 3rd-Party
 specificationVersion: '0.19'
 apis:
-  - aid: pact:pact-broker
-    name: Pact Broker API
-    description: >-
-      Pact Broker is a hypermedia HAL API for storing and retrieving consumer
-      contracts created with the Pact contract testing framework. It enables
-      teams to share, version, and verify pacts between consumers and
-      providers.
-    humanURL: https://docs.pact.io/pact_broker
-    tags:
-      - Contract Testing
-      - Testing
-    properties:
-      - type: Documentation
-        url: https://docs.pact.io/pact_broker
-      - type: GitHubRepository
-        url: https://github.com/pact-foundation/pact_broker
-      - type: Hosted Service
-        url: https://pactflow.io
+- aid: pact:pact-broker
+  name: Pact Broker API
+  description: >-
+    Pact Broker is a hypermedia HAL API for storing and retrieving consumer contracts created with the
+    Pact contract testing framework. It enables teams to share, version, and verify pacts between consumers
+    and providers.
+  humanURL: https://docs.pact.io/pact_broker
+  tags:
+  - Contract Testing
+  - Testing
+  properties:
+  - type: Documentation
+    url: https://docs.pact.io/pact_broker
+  - type: GitHubRepository
+    url: https://github.com/pact-foundation/pact_broker
+  - type: Hosted Service
+    url: https://pactflow.io
+- aid: pact:pact-index-api
+  name: Pact Index API
+  description: The Index API from Pact — 1 operation(s) for index.
+  humanURL: https://docs.pact.io/pact_broker
+  tags:
+  - Index
+  properties:
+  - type: OpenAPI
+    url: openapi/pact-index-api-openapi.yml
+- aid: pact:pact-pacticipants-api
+  name: Pact Pacticipants API
+  description: The Pacticipants API from Pact — 3 operation(s) for pacticipants.
+  humanURL: https://docs.pact.io/pact_broker
+  tags:
+  - Pacticipants
+  properties:
+  - type: OpenAPI
+    url: openapi/pact-pacticipants-api-openapi.yml
+- aid: pact:pact-pacts-api
+  name: Pact Pacts API
+  description: The Pacts API from Pact — 2 operation(s) for pacts.
+  humanURL: https://docs.pact.io/pact_broker
+  tags:
+  - Pacts
+  properties:
+  - type: OpenAPI
+    url: openapi/pact-pacts-api-openapi.yml
+- aid: pact:pact-verifications-api
+  name: Pact Verifications API
+  description: The Verifications API from Pact — 1 operation(s) for verifications.
+  humanURL: https://docs.pact.io/pact_broker
+  tags:
+  - Verifications
+  properties:
+  - type: OpenAPI
+    url: openapi/pact-verifications-api-openapi.yml
+- aid: pact:pact-webhooks-api
+  name: Pact Webhooks API
+  description: The Webhooks API from Pact — 1 operation(s) for webhooks.
+  humanURL: https://docs.pact.io/pact_broker
+  tags:
+  - Webhooks
+  properties:
+  - type: OpenAPI
+    url: openapi/pact-webhooks-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/pact-agentic-access.yml
