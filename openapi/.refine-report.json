@@ -1,0 +1,22 @@
+{
+  "provider": "pact",
+  "sources": [
+    "pact-index-api-openapi.yml",
+    "pact-pacticipants-api-openapi.yml",
+    "pact-pacts-api-openapi.yml",
+    "pact-verifications-api-openapi.yml",
+    "pact-webhooks-api-openapi.yml"
+  ],
+  "outputs": [
+    "pact-index-api-openapi.yml",
+    "pact-pacticipants-api-openapi.yml",
+    "pact-pacts-api-openapi.yml",
+    "pact-verifications-api-openapi.yml",
+    "pact-webhooks-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
