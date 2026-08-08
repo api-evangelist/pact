@@ -12,7 +12,7 @@
       "source": "https://pact-foundation.slack.com/blog/rss/",
       "feed_url": "https://pact-foundation.slack.com/blog/rss/",
       "title": "",
-      "saved": 0,
+      "saved": 2,
       "method": "feed"
     },
     {
@@ -23,6 +23,6 @@
       "method": "discovered"
     }
   ],
-  "post_count": 38,
-  "fetched": "2026-08-01T15:49:00Z"
+  "post_count": 42,
+  "fetched": "2026-08-06T14:08:46Z"
 }
