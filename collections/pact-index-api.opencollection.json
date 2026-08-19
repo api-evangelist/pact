@@ -1,0 +1,36 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Pact Broker Index API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Index",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "API index (HAL)",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pact-broker.example.com/"
+          },
+          "docs": "API index (HAL)"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

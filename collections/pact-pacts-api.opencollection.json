@@ -1,0 +1,80 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Pact Broker Index Pacts API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Pacts",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Publish a pact for a consumer version",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://pact-broker.example.com/pacts/provider/:provider/consumer/:consumer/version/:version",
+            "params": [
+              {
+                "name": "provider",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "consumer",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "version",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Publish a pact for a consumer version"
+        },
+        {
+          "info": {
+            "name": "Get the latest pact between a consumer and provider",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pact-broker.example.com/pacts/provider/:provider/consumer/:consumer/latest",
+            "params": [
+              {
+                "name": "provider",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "consumer",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get the latest pact between a consumer and provider"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

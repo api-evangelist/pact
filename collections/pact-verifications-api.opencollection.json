@@ -1,0 +1,51 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Pact Broker Index Verifications API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Verifications",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List verification results",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pact-broker.example.com/verification-results"
+          },
+          "docs": "List verification results"
+        },
+        {
+          "info": {
+            "name": "Publish a verification result",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pact-broker.example.com/verification-results",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Publish a verification result"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

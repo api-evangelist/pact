@@ -1,0 +1,99 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Pact Broker Index Pacticipants API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Pacticipants",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List pacticipants (applications)",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pact-broker.example.com/pacticipants"
+          },
+          "docs": "List pacticipants (applications)"
+        },
+        {
+          "info": {
+            "name": "Get a pacticipant by name",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pact-broker.example.com/pacticipants/:name",
+            "params": [
+              {
+                "name": "name",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a pacticipant by name"
+        },
+        {
+          "info": {
+            "name": "Create or update a pacticipant",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pact-broker.example.com/pacticipants/:name",
+            "params": [
+              {
+                "name": "name",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create or update a pacticipant"
+        },
+        {
+          "info": {
+            "name": "Get a specific version of a pacticipant",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pact-broker.example.com/pacticipants/:name/versions/:version",
+            "params": [
+              {
+                "name": "name",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "version",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a specific version of a pacticipant"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
