@@ -22,6 +22,10 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pact.png
 tags:
   - Contract Testing
+  - Open-Source
+  - Testing
+tags_raw:
+  - Contract Testing
   - Open Source
   - Testing
 url: >-
@@ -81,6 +85,8 @@ apis:
   description: The Verifications API from Pact — 1 operation(s) for verifications.
   humanURL: https://docs.pact.io/pact_broker
   tags:
+  - Verification
+  tags_raw:
   - Verifications
   properties:
   - type: OpenAPI
@@ -90,6 +96,8 @@ apis:
   description: The Webhooks API from Pact — 1 operation(s) for webhooks.
   humanURL: https://docs.pact.io/pact_broker
   tags:
+  - Webhook
+  tags_raw:
   - Webhooks
   properties:
   - type: OpenAPI
