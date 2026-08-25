@@ -6,24 +6,20 @@
       "feed_url": "https://docs.pact.io/blog",
       "title": "",
       "saved": 0,
-      "method": "none",
-      "error": "parse_failed"
+      "method": "none"
     },
     {
       "source": "https://pact-foundation.slack.com/blog/rss/",
       "feed_url": "https://pact-foundation.slack.com/blog/rss/",
       "title": "",
-      "saved": 1,
+      "saved": 0,
       "method": "feed"
     },
     {
       "source": "https://pact-foundation.slack.com",
-      "feed_url": "https://pact-foundation.slack.com/blog/rss/",
-      "title": "",
-      "saved": 0,
-      "method": "discovered"
+      "error": "HTTPError"
     }
   ],
   "post_count": 43,
-  "fetched": "2026-08-15T12:11:08Z"
+  "fetched": "2026-08-22T20:20:02Z"
 }
