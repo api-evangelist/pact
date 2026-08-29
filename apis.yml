@@ -6,6 +6,19 @@ description: >-
   JavaScript, Go, and Python. Pact Broker provides a hypermedia-driven HAL
   API for storing, retrieving, and verifying contracts between services.
 type: Index
+deliveryModel:
+  model: self-hosted
+  license: MIT
+  open_source: true
+  commercial: false
+  callable_host: false
+  label: Self-hosted open source · you run it yourself
+  confidence: high
+  source:
+  - license
+  - openapi
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: self-serve
@@ -103,6 +116,14 @@ apis:
   - type: OpenAPI
     url: openapi/pact-webhooks-api-openapi.yml
 common:
+  - type: IssueTracker
+    url: https://github.com/pact-foundation/pact_broker/issues
+  - type: Releases
+    url: https://github.com/pact-foundation/pact_broker/releases
+  - type: CodeOfConduct
+    url: https://github.com/pact-foundation/pact_broker/blob/master/CODE_OF_CONDUCT.md
+  - type: ContributionGuide
+    url: https://github.com/pact-foundation/pact_broker/blob/master/CONTRIBUTING.md
   - type: License
     name: MIT
     url: https://github.com/pact-foundation/pact_broker/blob/master/LICENSE
