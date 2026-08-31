@@ -98,7 +98,7 @@ apis:
   description: The Verifications API from Pact — 1 operation(s) for verifications.
   humanURL: https://docs.pact.io/pact_broker
   tags:
-  - Verification
+  - Verifications
   tags_raw:
   - Verifications
   properties:
