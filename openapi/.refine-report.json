@@ -1,11 +1,7 @@
 {
   "provider": "pact",
   "sources": [
-    "pact-index-api-openapi.yml",
-    "pact-pacticipants-api-openapi.yml",
-    "pact-pacts-api-openapi.yml",
-    "pact-verifications-api-openapi.yml",
-    "pact-webhooks-api-openapi.yml"
+    "_original/pact-openapi.yml"
   ],
   "outputs": [
     "pact-index-api-openapi.yml",
@@ -17,6 +13,16 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "pact-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "pact-index-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "pact-pacticipants-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "pact-pacts-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "pact-verifications-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "pact-webhooks-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
