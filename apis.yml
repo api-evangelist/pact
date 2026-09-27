@@ -36,12 +36,13 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pact.png
 tags:
   - Contract Testing
-  - Open-Source
+  - Open Source
   - Testing
 tags_raw:
   - Contract Testing
   - Open Source
   - Testing
+  - Open-Source
 url: >-
   https://raw.githubusercontent.com/api-evangelist/pact/refs/heads/main/apis.yml
 created: '2026-03-25'
