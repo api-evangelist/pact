@@ -118,6 +118,9 @@ apis:
   - type: OpenAPI
     url: openapi/pact-webhooks-api-openapi.yml
 common:
+  - type: CapabilityMap
+    url: capabilities/pact-capability-edges.yml
+    name: Pact Business Capability Map
   - type: IssueTracker
     url: https://github.com/pact-foundation/pact_broker/issues
   - type: Releases
